@@ -693,7 +693,7 @@ var ppnWandel = 8;
 var ppnBinnen = 5;
 var ppnZwembad = 10;
 var ppnVoeding = 2.5;
-var ppnKussen = 1.5;
+var ppnKussen = 2;
 
 	if(aantalHonden > 1)
 	{
