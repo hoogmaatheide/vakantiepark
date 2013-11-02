@@ -1,3 +1,5 @@
+var isDebuggingInschrijving = false;
+
 function loadVakantieInschrijving()
 {
 aantalHonden = 1;
@@ -59,7 +61,7 @@ document.getElementById('vakantieform').submit();
 
 function NextStepOne()
 {
-	if(ValidateStepOne())
+	if(isDebuggingInschrijving || ValidateStepOne())
 	{
 		// var email = document.getElementById('txt_idEmail').value;
 		// var tel = document.getElementById('txt_idTelefoonnummer').value;
@@ -245,7 +247,7 @@ function ValidateStepOne()
 
 function NextStepTwo()
 {
-if(ValidateStepTwo())
+if( isDebuggingInschrijving || ValidateStepTwo())
 	{
 	document.getElementById('ugeg').style.display ='none'; 
 	document.getElementById('hgeg').style.display =''; 
@@ -290,7 +292,7 @@ function ValidateStepTwo()
 
 function NextStepThree()
 {
-if(ValidateStepThree())
+if(isDebuggingInschrijving || ValidateStepThree())
 	{
 	document.getElementById('hgeg').style.display ='none'; 
 	document.getElementById('pgeg').style.display =''; 
@@ -336,7 +338,7 @@ function ValidateStepThree()
 
 function NextStepFour()
 {
-if(ValidateStepFour())
+if(isDebuggingInschrijving ||ValidateStepFour())
 	{
 	document.getElementById('sgeg').style.display =''; 
 	document.getElementById('pgeg').style.display ='none'; 
@@ -424,7 +426,7 @@ return true;
 function NextStepFive()
 {
 
-if(ValidateStepFive())
+if(isDebuggingInschrijving || ValidateStepFive())
 {
 
 var name = document.getElementById('txt_voornaam').value + " " + document.getElementById('txt_achternaam').value; 
